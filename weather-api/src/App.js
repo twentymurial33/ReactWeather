@@ -3,6 +3,7 @@ import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 import './App.css';
+import ScrollToNext from "./components/scrollToNext";
 
 const API_KEY= "602a4e2c713e745ad793e5d9e5c58297";
 
@@ -59,7 +60,9 @@ class App extends React.Component{
         humidity={this.state.humidity}
         description={this.state.humidity}
         error={this.state.error}
+       
         />
+        <ScrollToNext pageSelector=".portfolio-page" />
         </div>
         );
     }
